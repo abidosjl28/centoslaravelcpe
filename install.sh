@@ -97,6 +97,9 @@ chown -R apache.apache /var/www/facturaloperues21_v1.1
 chmod -R 755 /var/www/facturaloperues21_v1.1
 chmod -R 755 /var/www/facturaloperues21_v1.1/storage
 chmod -R 777 /var/www/facturaloperues21_v1.1/storage/logs
-mysql_secure_installation
-echo " INSTALACION COMPLETA..."
-echo " Por favor reiniciar el servidor, una vez realizado la migracion de la base de datos"
+
+echo "Nota: Por favor debe cambiar el password del servidor Mysql, el password que aparece es temporal"
+grep 'temporary password' /var/log/mysqld.log
+echo "Ejecutar el siguiente comando para cambiar el password: mysql_secure_installation"
+echo "INSTALACION COMPLETA..."
+echo "Por favor reiniciar el servidor, una vez realizado la migracion de la base de datos"
