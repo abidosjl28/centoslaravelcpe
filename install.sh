@@ -90,7 +90,7 @@ tar -zxvf rarlinux-x64-5.6.1.tar.gz
 cd rar*
 make && make install
 
-cd /root/CentOSLaravel
+cd /root/centoslaravelcpe
 unrar x facturaloperues21_v1.1.rar /var/www
 #LOS PERMISOS DEL PROYECTO
 chown -R apache.apache /var/www/facturaloperues21_v1.1
